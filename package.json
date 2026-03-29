@@ -1,0 +1,25 @@
+{
+  "name": "microsoft-issues-mcp-server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "clean": "rimraf dist",
+    "prestart": "npm run clean && npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/functions": "4.7.2-beta.0",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.25.51"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.57",
+    "rimraf": "^5.0.0",
+    "typescript": "^4.9.5"
+  },
+  "main": "dist/src/{index.js,functions/*.js}"
+}
