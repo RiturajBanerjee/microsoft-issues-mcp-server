@@ -60,11 +60,6 @@ The [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) is an open 
 
 ## Configuration
 
-The server uses environment variables for configuration. Create or update a `.env` file in the root directory:
-
-```env
-# Optional: Add any required environment variables here
-```
 
 Currently, the tools use public APIs (GitHub and Stack Overflow) that don't require authentication for basic read access.
 
